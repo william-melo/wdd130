@@ -1,19 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrFJA.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7V1s.ttf)
+    format("truetype");
+}
+
 :root {
   --paragraph-font: "Poppins", sans-serif;
-  --primary-color: #XXXXXX;
-  --secondary-color: #XXXXXX;
-  --accent1-color: #XXXXXX;
-  --accent2-color: #XXXXXX;
+  --primary-color: #091540;
+  --secondary-color: #C0F8D1;
+  --accent1-color: #7692FF;
+  --accent2-color: #9EE37D;
 
-  --heading-font: "______", serif;
-  --paragraph-font: "______", serif;
+  --heading-font: "Poppins", serif;
+  --paragraph-font: "Poppins", serif;
 
-  --nav-background-color: #XXXXXX;
-  --nav-link-color: #XXXXXX;
-  --nav-hover-link-color: #XXXXXX;
-  --nav-hover-background-color: #XXXXXX;
+  --nav-background-color: #091540;
+  --nav-link-color: #C0F8D1;
+  --nav-hover-link-color: #7692FF;
+  --nav-hover-background-color: #9EE37D;
 }
 
 body {
