@@ -16,7 +16,7 @@ h1 {
 }
 
 form {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
   padding: 20px;
   border-radius: 8px;
@@ -46,7 +46,8 @@ label {
 input[type="text"],
 textarea,
 select,
-input[type="number"] {
+input[type="number"],
+input[type="email"] {
   width: 100%;
   padding: 12px;
   margin-bottom: 16px;
@@ -58,6 +59,11 @@ input[type="number"] {
 
 textarea {
   resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
 }
 
 button {

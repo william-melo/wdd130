@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A quiz form about css and html" />
-    <meta name="author" content="William Melo" />
     <title>Quiz on HTML and CSS</title>
     <link rel="stylesheet" href="styles/quiz.css" />
   </head>
@@ -39,6 +37,35 @@
           browser?</label
         >
         <input type="number" id="q4" name="q4" required />
+
+        <!-- Question 5: Radio Buttons -->
+        <label
+          >5. Which of the following is an HTML tag for creating a list?</label
+        >
+        <label
+          ><input type="radio" name="q5" value="ul" required />
+          &lt;ul&gt;</label
+        >
+        <label><input type="radio" name="q5" value="li" /> &lt;li&gt;</label>
+        <label
+          ><input type="radio" name="q5" value="list" /> &lt;list&gt;</label
+        >
+
+        <!-- Question 6: Checkbox -->
+        <label
+          >6. Select all that apply: Which of these are valid HTML5 input
+          types?</label
+        >
+        <label><input type="checkbox" name="q6" value="text" /> Text</label>
+        <label><input type="checkbox" name="q6" value="button" /> Button</label>
+        <label><input type="checkbox" name="q6" value="submit" /> Submit</label>
+        <label><input type="checkbox" name="q6" value="number" /> Number</label>
+
+        <!-- Question 7: Email Input -->
+        <label for="q7"
+          >7. What is the HTML input type for email addresses?</label
+        >
+        <input type="email" id="q7" name="q7" required />
 
         <!-- Submit Button -->
         <button type="submit">Submit Quiz</button>
