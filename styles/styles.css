@@ -1,0 +1,73 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Ajusta el ancho de las columnas según tus necesidades */
+  gap: 1rem; /* Espacio entre las columnas */
+  max-width: 840px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+aside {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #e3dac9;
+  color: #333;
+  text-align: center;
+}
+
+aside h2 {
+  font-size: 19px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+  float: right;
+}
+
+p {
+  padding: 0;
+}
+
+footer {
+  margin-top: 24px;
+  border-top: 3px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  border-bottom: 3px solid #333; /* Añadir borde inferior */
+  padding-bottom: 10px; /* Espacio entre el borde y el texto */
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #9ee37d;
+  color: #000;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz on HTML and CSS</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+  </head>
+  <body>
+    <h1>HTML and CSS Quiz</h1>
+    <form>
+      <fieldset>
+        <legend>Quiz Questions</legend>
+
+        <!-- Question 1: Text Input -->
+        <label for="q1"
+          >1. What is the HTML element for the largest heading?</label
+        >
+        <input type="text" id="q1" name="q1" required />
+
+        <!-- Question 2: Textarea -->
+        <label for="q2">2. Describe the CSS box model.</label>
+        <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+
+        <!-- Question 3: Select -->
+        <label for="q3">3. Which CSS property controls the text color?</label>
+        <select id="q3" name="q3" required>
+          <option value="" selected disabled>Choose One ...</option>
+          <option value="color">color</option>
+          <option value="background-color">background-color</option>
+          <option value="font-size">font-size</option>
+        </select>
+
+        <!-- Question 4: Number Input -->
+        <label for="q4"
+          >4. How many pixels is the default margin for the body element in a
+          browser?</label
+        >
+        <input type="number" id="q4" name="q4" required />
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Quiz</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
