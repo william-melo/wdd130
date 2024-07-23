@@ -1,0 +1,83 @@
+/* General styles for the trips page */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cta {
+  background-color: #e0f7fa;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.trips {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trip {
+  flex: 1 1 calc(33% - 20px);
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.trip img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.trip-table {
+  margin-top: 40px;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: #00796b;
+  color: white;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00796b;
+  color: white;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,223 @@
+/* rafting.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrFJA.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7V1s.ttf)
+    format("truetype");
+}
+
+:root {
+  --primary-color: #091540;
+  --secondary-color: #c0f8d1;
+  --accent1-color: #7692ff;
+  --accent2-color: #9ee37d;
+  --heading-font: "Poppins", serif;
+  --paragraph-font: "Poppins", serif;
+  --nav-background-color: #091540;
+  --nav-link-color: #c0f8d1;
+  --nav-hover-link-color: #7692ff;
+  --nav-hover-background-color: #9ee37d;
+  --text-color: #333333;
+  --background-color: #f0f0f0;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the header */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px 20px; /* Espaciado más amplio para el header */
+  background-color: var(--nav-background-color);
+  border-bottom: 2px solid var(--accent1-color); /* Línea de separación inferior */
+}
+
+header img {
+  max-height: 60px; /* Aumenta ligeramente el tamaño del logo */
+  width: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Alinea los enlaces al final del contenedor */
+  gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor para mejor legibilidad */
+  font-weight: 700; /* Negrita para los enlaces de navegación */
+  padding: 8px 16px; /* Espaciado interno en los enlaces */
+  border-radius: 4px; /* Bordes redondeados en los enlaces */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para los efectos de hover */
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 0;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+  font-size: 3em;
+  font-family: var(--heading-font);
+  margin: 0;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--secondary-color);
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero article img {
+  float: right;
+  margin: 0 0 10px 10px;
+  max-width: 100px;
+  height: auto;
+}
+
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  color: var(--secondary-color);
+  font-size: 2.5em;
+  font-family: var(--heading-font);
+  margin-bottom: 20px;
+}
+
+.history-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-content {
+  font-family: var(--paragraph-font);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.history-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adventures {
+  margin: 40px 0;
+}
+
+.adventures h2 {
+  color: var(--secondary-color);
+  font-size: 2.5em;
+  font-family: var(--heading-font);
+  margin-bottom: 20px;
+}
+
+.adventures-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Cinco columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las figuras */
+}
+
+figure {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .sociallinks {
+  display: flex; /* Organiza las imágenes sociales en una fila */
+  justify-content: flex-end; /* Alinea las imágenes a la derecha */
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+footer .sociallinks a {
+  display: flex; /* Para centrar verticalmente las imágenes */
+  align-items: center;
+}
+
+footer .sociallinks a img {
+  max-height: 30px; /* Ajusta el tamaño máximo de las imágenes sociales */
+  vertical-align: middle; /* Alinea verticalmente las imágenes */
+}
